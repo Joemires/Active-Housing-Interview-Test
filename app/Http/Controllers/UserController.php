@@ -46,7 +46,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return responder()->success($user)->respond();
     }
 
     /**
