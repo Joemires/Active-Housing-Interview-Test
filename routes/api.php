@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::middleware('api-responder')->group( function() {
-    Route::resource('user', UserController::class)->only('index', 'show');
+    Route::resource('users', UserController::class)->only('index', 'show');
 });
