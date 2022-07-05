@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        return responder()->success(User::paginate(request()->get('cursor', 10)))->respond();
     }
 
     /**
